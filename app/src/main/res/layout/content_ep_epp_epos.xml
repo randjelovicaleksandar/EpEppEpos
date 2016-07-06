@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.admin.epeppepos.EpEppEpos"
+    android:background="@drawable/pozadina"
+    tools:showIn="@layout/activity_ep_epp_epos"
+    >
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/startSnim"
+        android:background="@drawable/recordcrveno"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/zavrsiSnim"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/stopcrno"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="40dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinFrek"
+        android:spinnerMode="dialog"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/skup_frekvencija"
+        android:layout_marginTop="260dp"
+     />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pustiPonovo"
+        android:background="@drawable/playcrveno"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="310dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Izaberi frekvenciju:"
+        android:id="@+id/txtFrekvencija"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Snimi"
+        android:id="@+id/textSnimi"
+        android:layout_below="@+id/startSnim"
+        android:layout_alignLeft="@+id/startSnim"
+        android:layout_alignStart="@+id/startSnim"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Stop"
+        android:id="@+id/textStop"
+        android:layout_below="@+id/zavrsiSnim"
+        android:layout_alignRight="@+id/zavrsiSnim"
+        android:layout_alignEnd="@+id/zavrsiSnim"
+        android:layout_marginRight="27dp"
+        android:layout_marginTop="5dp" />
+
+
+</RelativeLayout>

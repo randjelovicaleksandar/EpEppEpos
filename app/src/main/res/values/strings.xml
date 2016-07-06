@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">EpEppEpos</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="skup_frekvencija">
+        <item>8.000 KHz (Najniža)</item>
+        <item>11.000 KHz</item>
+        <item>16.000 KHz</item>
+        <item>22.050 KHz</item>
+        <item>32.000 KHz</item>
+        <item>37.800 KHz</item>
+        <item>44.100 KHz (Najviša)</item>
+
+    </string-array>
+</resources>
